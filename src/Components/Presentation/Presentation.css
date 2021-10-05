@@ -1,0 +1,44 @@
+@keyframes animationTitle {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+.container-presentation {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    padding: 70px;
+}
+
+.title-main {
+    animation-duration: 10s;
+    animation-name: animationTitle;
+    font-family: 'Fredoka One', cursive;
+}
+
+.title-main b {
+    color: #f44336;
+}
+
+.container-promo {
+    font-family: 'Fredoka One', cursive;
+    display: flex;
+    flex-direction: column;
+}
+
+.first-text, .second-text {
+    font-size: 2rem;
+    animation-duration: 10s;
+    animation-name: animationTitle;
+}
+
+.second-text {
+    color: #f44336;
+}

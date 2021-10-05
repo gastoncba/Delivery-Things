@@ -1,0 +1,5 @@
+.next-previous{ 
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5%;
+}

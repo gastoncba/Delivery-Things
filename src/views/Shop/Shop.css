@@ -1,0 +1,9 @@
+.button-show-product{
+    padding-bottom: 2rem;
+}
+
+@media only screen and (max-device-width: 576px) {
+    .container-shop, .img-card {
+        width: 100% !important;
+    }
+}

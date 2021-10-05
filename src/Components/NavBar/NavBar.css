@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+.link-conteiner {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 0;
+    text-decoration: none;
+    color: white;
+}
+
+.order-title-style{
+    font-family: 'Fredoka One', cursive !important;
+}
+

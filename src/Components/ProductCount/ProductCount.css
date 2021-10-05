@@ -1,0 +1,17 @@
+.container-cant-product {
+    margin-top: 10px;
+}
+
+.container-cant-select {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+}
+
+.arrow-select {
+    display: grid;
+}
+
+[type=reset], [type=submit], button, html [type=button] {
+    padding: 0;
+}
