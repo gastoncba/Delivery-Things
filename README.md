@@ -1,6 +1,8 @@
 # Delivery Things!
 Simulador de una aplicación que permite a las personas realizar el pedido de comidas, medicamentos, productos para el hogar, entre otras cosas de interés que pueden llagar a ser de utilidad o de urgencia en la vida cotidiana. En esta primera versión se realizó solo el desarrollo frontend
 
+## Enlace al sitio web: https://app-delivery-things.herokuapp.com/
+
 Para este Proyecto se utilizaron las siguientes librerías adicionales, con la idea de centrarnos en la lógica de la aplicación:
 
 Semantic UI https://react.semantic-ui.com/ 
@@ -8,8 +10,6 @@ Semantic UI https://react.semantic-ui.com/
 Material UI https://material-ui.com/
 
 Formik https://formik.org/ 
-
-Enlace al sitio web: https://app-delivery-things.herokuapp.com/
 
 # Getting Started with Create React App
 
