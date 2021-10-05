@@ -1,3 +1,14 @@
+# Delivery Things!
+Simulador de una aplicación que permite a las personas realizar el pedido de comidas, medicamentos, productos para el hogar, entre otras cosas de interés que pueden llagar a ser de utilidad o de urgencia en la vida cotidiana. En esta primera versión se realizó solo en desarrollo frontend
+
+Para este Proyecto se utilizaron las siguientes librerías adicionales, con la idea de centrarnos en la lógica de la aplicación:
+
+Semantic UI https://react.semantic-ui.com/ 
+
+Material UI https://material-ui.com/
+
+Formik https://formik.org/ 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
