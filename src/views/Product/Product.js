@@ -37,7 +37,7 @@ function Product({prod}) {
             <ProductCount stock={stock} initialValue={1} onAdd={onAdd}></ProductCount>
             </Card.Content>
         </Card>
-        <ConfirmationAdd visibleState={vis} cerrar={cerrar}></ConfirmationAdd>
+        <ConfirmationAdd visibleState={vis} cerrar={cerrar} nombreProd={prod.nombre}></ConfirmationAdd>
         </div>
     )
 }

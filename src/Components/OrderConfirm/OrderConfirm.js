@@ -55,7 +55,7 @@ function OrderConfirm({nextFinal, prev}) {
             Aceptar
             <Icon name='right arrow'/>
             </Button>
-            <Confirm
+            <Confirm className='container-confirm'
             header='Confirmación de Compra'
             content='Desea confirmar la compra?'
             confirmButton='confirmar'

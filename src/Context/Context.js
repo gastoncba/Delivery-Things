@@ -13,6 +13,10 @@ export const CartProvider = ({children}) => {
     const [cant, setCant] = useState(0)
     const [order, setOrder] = useState({})
     const [stateCompra, setStateCompra] = useState(false)
+    
+    //agregamos la hook useLocation para saber la ruta actual 
+    //representa donde esta ubicado la app en un determinado momento
+    const location = useLocation()
 
     //funciones del carrito 
 
@@ -88,8 +92,21 @@ export const CartProvider = ({children}) => {
          setTotal(getTotal())
     }, [carrito])
 
+    //lo que hace este useEffect es practicamente chequear si esta la view /order , para que el 
+    //icono del carrito de compras quede inactivo durante esta etapa de completado de datos.
+    //eso se hace para que el usuario en la etapa de completado de datos no pueda acceder al carrito y haci evitar 
+    //inconcistencias 
+    useEffect(() => {
+        const route = location.pathname
+        if(route == '/order') {
+            setStateCompra(true)
+        } else {
+            setStateCompra(false)
+        }
+    }, [location])
+
      return (
-         <CartContext.Provider value={{carrito, setCarrito, addItem, cant, getStock, total, removeItem, clear, isEmpty, order, setOrder, stateCompra, setStateCompra}}>
+         <CartContext.Provider value={{carrito, setCarrito, addItem, cant, getStock, total, removeItem, clear, isEmpty, order, setOrder, stateCompra}}>
              {children}
          </CartContext.Provider>
      );

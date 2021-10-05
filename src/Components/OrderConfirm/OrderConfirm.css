@@ -3,3 +3,7 @@
     justify-content: space-evenly;
     margin-top: 5%;
 }
+
+.container-confirm .ui.primary.button{
+    background-color: #21ba45 !important;
+}

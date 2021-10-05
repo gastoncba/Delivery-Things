@@ -4,7 +4,7 @@ import DeliveryForm from '../../Components/DeliveryForm/DeliveryForm'
 import FormPay from '../../Components/FormPay/FormPay'
 import OrderConfirm from '../../Components/OrderConfirm/OrderConfirm'
 import './Order.css'
-import { CartContext } from '../../Context/Context'
+import {useHistory} from 'react-router-dom'
 
 function Order() {
 
@@ -15,7 +15,7 @@ function Order() {
     const [truckDisabled, setTruckDisabled] = useState(false)
     const [confComplete, setConfComplete] = useState(false)
     const [confDisabled, setConfDisabled] = useState(true)
-    const {setStateCompra} = useContext(CartContext)
+    const history = useHistory()
 
     const nextPay = () => {
       setTruckComplete(true)
@@ -48,10 +48,15 @@ function Order() {
       setConfirm(true)
     }
     
+    const goMain = () => {
+      setTimeout(()=> {
+        history.push('/')
+      },7500)
+    }
+
     return (
         <div>
           {!confirm ? <div>
-            {setStateCompra(true)}
             <Step.Group style={{width:'100vw'}}>
     <Step completed={truckComplete} disabled={truckDisabled}>
       <Icon name='truck' />
@@ -87,7 +92,7 @@ function Order() {
   </Segment>
   </div>:
   <Message positive className='confirm-message'>
-    {setStateCompra(false)}
+    {goMain()}
     <Message.Header>¡Orden registrada con éxito!</Message.Header>
     <p>
     ¡Recibirá una notificación cuando esté en su hogar!

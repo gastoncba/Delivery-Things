@@ -5,11 +5,10 @@ import SubBar from '../SubBar/SubBar'
 import Footer from '../Footer/Footer'
 
 
-function Presentation({loc}) {
+function Presentation() {
     
     return (
         <div>
-            {loc()}
             <h1 className='title-main'>
                 Bienvenidos a <b>Delivery Things!</b> 
             </h1>
